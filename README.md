@@ -17,6 +17,7 @@ repo sync
 
 ## Install Dependencies Before Building The Code
 
+
 ### If you wanna run the AGV Simulation on your computer, you should run these following commands first
 
 ```
@@ -51,7 +52,7 @@ curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
     apt-get install nodejs iputils-ping -y
 ```
 
-### If you wanna use the Cartographer Slam on your computer, you should run these following commands first
+### If you wanna use Cartographer Slam on your computer, you should run these following commands first
 
 ```
 sudo apt-get install -y \
