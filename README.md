@@ -15,9 +15,9 @@ python3 ~/bin/repo init -u http://10.110.217.40/CompalAGV5/agv5_manifest.git -m 
 repo sync
 ```
 
-### Install dependencies before building the code
+## Install Dependencies Before Building The Code
 
-#### If you wanna run the AGV Simulation on your computer, you should run these following commands first
+### If you wanna run the AGV Simulation on your computer, you should run these following commands first
 
 ```
 sudo apt-get update && apt-get install -y ros-kinetic-desktop-full=1.3.1-0*
@@ -51,7 +51,7 @@ curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
     apt-get install nodejs iputils-ping -y
 ```
 
-#### If you wanna use the Cartographer Slam on your computer, you should run these following commands first
+### If you wanna use the Cartographer Slam on your computer, you should run these following commands first
 
 ```
 sudo apt-get install -y \
