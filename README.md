@@ -5,9 +5,19 @@
 curl https://storage.googleapis.com/git-repo-downloads/repo-1 > ~/bin/repo 
 chmod a+x ~/bin/repo 
 ```
-### Install Dependencies before building the code
 
-#### If you wanna run the AGV Simulation on your computer, you should run these following commands
+### Get Internal Dev Source Code
+
+```
+python3 ~/bin/repo init -u http://192.168.100.50/CompalAGV5/agv5_manifest.git -m default.xml
+  or
+python3 ~/bin/repo init -u http://10.110.217.40/CompalAGV5/agv5_manifest.git -m compal_default.xml
+repo sync
+```
+
+### Install dependencies before building the code
+
+#### If you wanna run the AGV Simulation on your computer, you should run these following commands first
 
 ```
 sudo apt-get update && apt-get install -y ros-kinetic-desktop-full=1.3.1-0*
@@ -41,7 +51,7 @@ curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
     apt-get install nodejs iputils-ping -y
 ```
 
-#### If you wanna use the Cartographer Slam on your computer, you should run these following commands
+#### If you wanna use the Cartographer Slam on your computer, you should run these following commands first
 
 ```
 sudo apt-get install -y \
@@ -55,15 +65,6 @@ sudo apt-get install -y \
 git clone http://10.110.217.40/CompalRobotCommon/cartographer_deps.git
 cd cartographer_deps
 bash all.sh
-```
-
-### Get Internal Dev Source Code
-
-```
-python3 ~/bin/repo init -u http://192.168.100.50/CompalAGV5/agv5_manifest.git -m default.xml
-  or
-python3 ~/bin/repo init -u http://10.110.217.40/CompalAGV5/agv5_manifest.git -m compal_default.xml
-repo sync
 ```
 
 ## To build up all projects
